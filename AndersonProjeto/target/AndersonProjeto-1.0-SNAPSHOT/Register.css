@@ -1,0 +1,104 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden; /* Prevents scrolling */
+}
+
+.split-screen {
+    display: flex;
+    height: 100vh;
+}
+
+.left {
+    flex: 1.5;
+    background: rgb(90,108,95);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+#home{
+
+    text-align: left;
+}
+#home a:hover{
+    color: #fff !important;
+}
+.left {
+    flex: 1.5;
+    background: rgb(90,108,95);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+.left h1{
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+    top: 35%;
+    font-size: xxx-large;
+}
+.left h1 {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    font-size: 3em; /* Adjust font size as needed */
+    margin-bottom: 10px;
+}
+
+.right {
+    flex: 1;
+    background-color: #f5f5f5; /* Light gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    flex-direction: column; /* Aligns items vertically */
+}
+
+form {
+    display: flex; /* Ensures flex properties are applied */
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    width: 300px;
+}
+
+
+input, button {
+    margin: 5px 0; /* Adds margin to top and bottom for spacing */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input:focus, button:focus {
+    outline: none;
+    box-shadow: 0 0 2px 1px #006400;
+}
+
+button {
+    background: rgb(90,108,95);
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #006400;
+    color:#ffffff;
+}
+
+a {
+    color: #006400;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.content-wrapper h2{
+    text-align: center;
+    color: #006400;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    font-family: 'JetBrains Mono', Arial, sans-serif;
+}

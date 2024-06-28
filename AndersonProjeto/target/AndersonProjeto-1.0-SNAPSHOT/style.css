@@ -1,0 +1,115 @@
+/* General layout settings for the page */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Bahnschrift", "Helvetica Neue", "Helvetica", sans, serif;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center;
+    justify-content: center;
+    background: rgb(90,108,95);
+}
+
+/* Titulo settings */
+.Titulo {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+.Titulo img {
+    width: 200px; /* Largura da logo Farmatech */
+    height: auto; /* Altura automática para manter proporções */
+}
+
+#SubTitulo {
+    font-size: 18px;
+    color: transparent; /* Even lighter for less emphasis */
+    margin-top: 2px; /* Keeps elements close together */
+    text-align: center;
+    font-family: "Bahnschrift", "Helvetica Neue", "Helvetica", sans, serif;
+}
+
+/* Container to hold both halves */
+.container {
+    display: flex;
+    justify-content: space-around; /* Adjusts items with space around them */
+    align-items: center;
+    height: 70vh; /* Adjust height as needed */
+    width: 100%; /* Ensure the container fills an adequate part of the screen */
+}
+
+/* Styling for both halves */
+.half {
+    flex: 1; /* Allows each half to grow */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px; /* Padding for internal content */
+}
+
+/* Specific styling for the doctor section */
+.doctor {
+    position: relative;
+    height: 100%;
+    background-image: url(medico.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin-right: 40px; /* Afasta a imagem para a direita */
+    border-radius: 20px;
+}
+
+.doctor::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(6, 19, 90, 0.5); /* Dark overlay normally */
+    transition: background-color 0.3s ease; /* Smooth transition for the color change */
+    pointer-events: none; /* Ensures that clicks "pass through" the overlay */
+    z-index: 1; /* Ensures overlay is above the background but below content */
+    border-radius: 20px;
+}
+
+.doctor:hover::before {
+    background-color: rgba(34, 41, 81, 0.0); /* Lighter overlay on hover */
+}
+
+/* Specific styling for the patient section */
+.patient {
+    position: relative;
+    height: 100%;
+    background-image: url(farmaceutico2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    margin-left: 40px; /* Afasta a imagem para a esquerda */
+    border-radius: 20px;
+}
+
+.patient::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(6, 19, 90, 0.5); /* Dark overlay normally */
+    transition: background-color 0.3s ease; /* Smooth transition for the color change */
+    pointer-events: none; /* Ensures that clicks "pass through" the overlay */
+    z-index: 1; /* Ensures overlay is above the background but below content */
+    border-radius: 20px;
+}
+
+.patient:hover::before {
+    background-color: rgba(34, 41, 81, 0.0); /* Lighter overlay on hover */
+}
